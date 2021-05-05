@@ -71,6 +71,29 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.oneplus.extras.DeviceSettings.thermal.ThermalActivity"
+            android:exported="true"
+            android:label="@string/thermal_title"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.oneplus.extras.DeviceSettings.thermal.ThermalActivity"
+            android:permission="ThermalService">
+        </service>
+
+        <activity
+            android:name=".TouchscreenGestureSettings"
+            android:label="@string/touchscreen_gesture_settings_title"
+            android:theme="@style/AppTheme">
+        </activity>
+
         <receiver android:name="com.oneplus.extras.DeviceSettings.Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
