@@ -36,8 +36,8 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 
-import com.android.internal.evolution.hardware.LineageHardwareManager; // Need FWB support
-import com.android.internal.evolution.hardware.TouchscreenGesture; // Need FWB support
+import com.android.internal.custom.hardware.LineageHardwareManager; // Need FWB support
+import com.android.internal.custom.hardware.TouchscreenGesture; // Need FWB support
 
 import com.oneplus.extras.DeviceSettings.R;
 
