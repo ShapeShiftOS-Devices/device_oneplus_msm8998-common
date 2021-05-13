@@ -154,6 +154,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOARD_PLATFORM := msm8998
 PRODUCT_USES_QCOM_HARDWARE := true
 
+# Connectivity Engine support (CNE)
+PRODUCT_PACKAGES += \
+    cneapiclient \
+    com.quicinc.cne \
+    services-ext
+
+# Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
