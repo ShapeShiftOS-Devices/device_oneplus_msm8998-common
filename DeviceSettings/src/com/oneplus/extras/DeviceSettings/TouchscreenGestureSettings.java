@@ -34,7 +34,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
-import androidx.preference.SwitchPreference;
+import com.ssos.support.preferences.SwitchPreference;
 
 import com.android.internal.custom.hardware.LineageHardwareManager; // Need FWB support
 import com.android.internal.custom.hardware.TouchscreenGesture; // Need FWB support
