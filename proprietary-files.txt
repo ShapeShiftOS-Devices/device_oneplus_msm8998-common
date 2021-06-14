@@ -1022,6 +1022,10 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # Wi-Fi
 vendor/bin/cnss-daemon
 
+# WFD Dependency
+vendor/lib/libdisplayconfig.qti.so|7992c42b4cc784348381d824037216cff9922b22
+vendor/lib64/libdisplayconfig.qti.so|ed995e14b48117b77fe8a496d00d3f879b8c7dc3
+
 # WiFi Display - from phoenix_sprout 11 RKQ1.201123.002
 bin/wfdservice|cb053924304edda5bf4f9e3ddbbb7983e30513e9
 etc/init/wfdservice.rc
