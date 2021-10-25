@@ -28,8 +28,6 @@ public class ThermalActivity extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-
         getFragmentManager().beginTransaction().replace(android.R.id.content,
                 new ThermalSettingsFragment(), TAG_THERMAL).commit();
     }

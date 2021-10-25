@@ -29,8 +29,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class DeviceSettingsActivity extends Activity {
+public class DeviceSettingsActivity extends CollapsingToolbarBaseActivity {
 
     private DeviceSettings mDeviceSettingsFragment;
 
@@ -38,14 +40,11 @@ public class DeviceSettingsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-
         Fragment fragment = getFragmentManager().findFragmentById(android.R.id.content);
         if (fragment == null) {
             mDeviceSettingsFragment = new DeviceSettings();
             getFragmentManager().beginTransaction()
-                .add(android.R.id.content, mDeviceSettingsFragment)
-                .commit();
+                .replace(R.id.content_frame, new DeviceSettings(), "oneplussettings").commit();
         } else {
             mDeviceSettingsFragment = (DeviceSettings) fragment;
         }

@@ -10,20 +10,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="DeviceSettings">
     <PreferenceCategory
         android:key="graphics"
         android:title="@string/display_title">
 
         <SwitchPreference
             android:key="dc"
-            android:icon="@drawable/ic_dc_mode_icon"
             android:summary="@string/dc_dimming_enable_summary"
             android:title="@string/dc_dimming_enable_title" />
 
         <Preference
             android:key="panel_category"
-            android:icon="@drawable/ic_panel_modes_icon"
             android:title="@string/panel_modes_settings_title"
             android:summary="@string/panel_modes_settings_summary"
             android:persistent="false" >
@@ -39,7 +39,6 @@
 
         <ListPreference
             android:key="keycode_top_position"
-            android:icon="@drawable/ic_up_icon"
             android:dialogTitle="@string/notification_slider_selection_dialog_title"
             android:title="@string/notification_slider_top_position"
             android:summary="%s"
@@ -48,7 +47,6 @@
 
         <ListPreference
             android:key="keycode_middle_position"
-            android:icon="@drawable/ic_middle_icon"
             android:dialogTitle="@string/notification_slider_selection_dialog_title"
             android:title="@string/notification_slider_middle_position"
             android:summary="%s"
@@ -57,7 +55,6 @@
 
         <ListPreference
           android:key="keycode_bottom_position"
-          android:icon="@drawable/ic_down_icon"
           android:dialogTitle="@string/notification_slider_selection_dialog_title"
           android:title="@string/notification_slider_bottom_position"
           android:summary="%s"
@@ -71,7 +68,6 @@
 
         <com.oneplus.extras.DeviceSettings.VibratorStrengthPreference
             android:key="vib_strength"
-            android:icon="@drawable/ic_vibration_icon"
             android:title="Vibration Strength" />
     </PreferenceCategory>
 
